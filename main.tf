@@ -130,7 +130,7 @@ resource "aws_security_group" "bastion" {
 }
 
 resource "aws_instance" "bastion" {
-  ami                         = var.bastion_ami[var.region]
+  ami                         = var.bastion_ami["us-west-1"]
   instance_type               = var.bastion_instance_type
   key_name                    = var.key_name
   monitoring                  = true
