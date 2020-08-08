@@ -6,6 +6,12 @@ variable "region" {
   description = "The AWS region."
 }
 
+variable "team" {
+  type = string
+  description = "Team that is using this resource"
+  default = "DevOps"
+}
+
 variable "environment" {
   type = string
   description = "The name of our environment, i.e. development."

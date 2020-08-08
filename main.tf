@@ -8,7 +8,7 @@ resource "aws_vpc" "environment" {
 
   tags = {
     Name = var.environment
-    Team  = "DevOps"
+    Team  = var.team 
   }
 }
 
