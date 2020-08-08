@@ -48,11 +48,11 @@ output "vpc_id" {
 
 output "public_dns" {
   description = "List of public DNS names assigned to the instances. For EC2-VPC, this is only available if you've enabled DNS hostnames for your VPC"
-  value       = bastion.this.*.public_dns
+  value       = bastion.public_dns
 }
 
 output "public_ip" {
   description = "List of public IP addresses assigned to the instances, if applicable"
-  value       = bastion.this.*.public_ip
+  value       = bastion.public_ip
 }
 
