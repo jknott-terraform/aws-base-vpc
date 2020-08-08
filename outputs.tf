@@ -1,9 +1,14 @@
 # Outputs for our vpc module
 
 
+#output "public_subnet_id" {
+#  value = aws_subnet.public[0].id 
+#}
+
 output "public_subnet_id" {
-  value = aws_subnet.public[0].id 
+  value = aws_subnet.public.*.id 
 }
+
 
 output "cidr" {
   value = aws_vpc.environment.cidr_block
