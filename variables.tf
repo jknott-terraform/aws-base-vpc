@@ -46,7 +46,7 @@ variable "ami" {
   default = {
     "us-east-1" = "ami-f652979b"
     "us-west-1" = "ami-7c4b331c"
-    "eu-west-1" = "ami-0ae77879"
+    "us-east-2" = "ami-00f878ba92e9493bd"
   }
 
   description = "The AMIs to use for web and app instances."
@@ -69,7 +69,7 @@ variable "bastion_ami" {
   default = {
     "us-east-1" = "ami-f652979b"
     "us-west-1" = "ami-7c4b331c"
-    "eu-west-1" = "ami-0ae77879"
+    "us-east-2" = "ami-00f878ba92e9493bd"
   }
 
   description = "The bastion host AMIs."
@@ -93,4 +93,7 @@ variable "map_public_ip_on_launch" {
   default     = true
 }
 
-
+variable "zones" {
+  type = list(string)
+  description = "Availabiltiy zones "
+}
