@@ -46,7 +46,7 @@ variable "ami" {
   default = {
     "us-east-1" = "ami-f652979b"
     "us-west-1" = "ami-7c4b331c"
-    "us-east-2" = "ami-00f878ba92e9493bd"
+    "us-east-2" = "ami-0823f3f7bb503be4d"
   }
 
   description = "The AMIs to use for web and app instances."
@@ -69,7 +69,7 @@ variable "bastion_ami" {
   default = {
     "us-east-1" = "ami-f652979b"
     "us-west-1" = "ami-7c4b331c"
-    "us-east-2" = "ami-00f878ba92e9493bd"
+    "us-east-2" = "ami-0823f3f7bb503be4d"
   }
 
   description = "The bastion host AMIs."
