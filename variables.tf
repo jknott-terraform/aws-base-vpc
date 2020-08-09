@@ -93,4 +93,9 @@ variable "map_public_ip_on_launch" {
   default     = true
 }
 
+variable "zone" {
+  type = list(string)
+  description = "Setting the zone for the subnet"
+  default = ["us-east-2a", "us-east-2b", "us-east-2c"]
+}
 
