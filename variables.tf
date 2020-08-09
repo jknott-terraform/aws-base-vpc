@@ -93,7 +93,4 @@ variable "map_public_ip_on_launch" {
   default     = true
 }
 
-variable "zones" {
-  type = list(string)
-  description = "Availabiltiy zones "
-}
+
